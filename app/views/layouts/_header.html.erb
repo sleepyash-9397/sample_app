@@ -1,0 +1,14 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to root_path, id: "logo" do %>
+      <%= t("static_pages.name_app") %>
+    <% end %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("static_pages.home"), root_path %></li>
+        <li><%= link_to t("static_pages.help"), helf_path %></li>
+        <li><%= link_to t("static_pages.signup"), signup_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
