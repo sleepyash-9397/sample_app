@@ -7,5 +7,7 @@ code:
   success: "Sign up success!"
   failure: "Sign up fail!"
   notice: "Not found!"
+  login_success: "Log in success!"
+  login_failure: "Email or password incorrect!"
 size:
   size_gravatar: 80
