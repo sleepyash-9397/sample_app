@@ -11,3 +11,5 @@ code:
   login_failure: "Email or password incorrect!"
 size:
   size_gravatar: 80
+session:
+  remember_me: "1"
