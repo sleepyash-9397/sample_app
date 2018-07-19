@@ -1,4 +1,11 @@
+
 length:
   max_name: 50
   max_email: 255
   min_pass: 6
+code:
+  success: "Sign up success!"
+  failure: "Sign up fail!"
+  notice: "Not found!"
+size:
+  size_gravatar: 80

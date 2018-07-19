@@ -41,3 +41,6 @@ en:
     base_title: "Ruby on Rails Tutorial Sample App"
     railstutorial: "Ruby on Rails Tutorial"
     home: "Home"
+    create_acc: "Create my account"
+    confirm: "Confirmation"
+    error: "error"
