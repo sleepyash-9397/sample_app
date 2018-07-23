@@ -3,13 +3,9 @@ length:
   max_name: 50
   max_email: 255
   min_pass: 6
-code:
-  success: "Sign up success!"
-  failure: "Sign up fail!"
-  notice: "Not found!"
-  login_success: "Log in success!"
-  login_failure: "Email or password incorrect!"
 size:
   size_gravatar: 80
+  min_size: 50
 session:
-  remember_me: "1"
+  remember_me: 1
+per_page: 15
