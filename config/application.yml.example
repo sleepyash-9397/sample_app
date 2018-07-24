@@ -1,0 +1,4 @@
+development:
+  GMAIL_USERNAME: "username@gmail.com"
+  GMAIL_PASSWORD: "password"
+  DEFAULT_EMAIL_FROM: "noreply@example.com"

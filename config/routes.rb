@@ -11,4 +11,5 @@ Rails.application.routes.draw do
 
   get  "/signup", to: "users#new"
   resources :users
+  resources :account_activations, only: :edit
 end

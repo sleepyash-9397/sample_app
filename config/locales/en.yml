@@ -68,3 +68,16 @@ en:
     update_failure: "Update failure!"
     del_success: "Delete success!"
     del_failure: "Delete failure!"
+    notice_mail: "Please check your email to activate your account."
+    activate_email: "Account activated!"
+    notice_unactivate_email: "Invalid activation link"
+    unactivate_email: "Email unactivate"
+    check_email: "Account not activated.
+        Check your email for the activation link."
+  subject:
+    notice: "Account activation"
+  activation:
+    activation_text: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+    hi: "Hi"
+    activate: "Activate"
