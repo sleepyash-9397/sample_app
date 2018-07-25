@@ -9,3 +9,5 @@ size:
 session:
   remember_me: 1
 per_page: 15
+
+expired_time: 10
