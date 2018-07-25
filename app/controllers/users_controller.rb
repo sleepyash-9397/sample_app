@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
-  before_action :authorize, except: [:new, :index]
-  before_action :logged_in_user, except: [:new, :show]
+  before_action :authorize, except: [:new, :index, :create]
+  before_action :logged_in_user, except: [:new, :show, :create]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
+  before_action :user_activate, only: [:show]
 
   def index
-    @users = User.all.page(params[:page]).per Settings.per_page
+    @users = User.where(activated: true)
+                 .page(params[:page]).per Settings.per_page
   end
 
   def new
@@ -13,17 +15,15 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
-    flash[:notice] = t "messages.notice"
-    render template: "static_pages/home"
+    return unless @user
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "messages.success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "messages.notice_mail"
+      redirect_to root_url
     else
       flash[:error] = t "messages.failure"
       render :new
@@ -78,6 +78,12 @@ class UsersController < ApplicationController
     @user = User.find_by_id params[:id]
     return if @user
     flash[:notice] = t "messages.notice"
+    redirect_to root_url
+  end
+
+  def user_activate
+    return if @user.activated == true
+    flash[:notice] = t "messages.unactivate_email"
     redirect_to root_url
   end
 end
