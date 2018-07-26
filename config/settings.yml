@@ -3,11 +3,18 @@ length:
   max_name: 50
   max_email: 255
   min_pass: 6
+  max_content: 140
 size:
   size_gravatar: 80
   min_size: 50
+  hight: 400
+  width: 400
 session:
   remember_me: 1
 per_page: 15
 
 expired_time: 10
+
+size_picture: 5
+
+accept_img: "image/jpeg,image/gif,image/png"
