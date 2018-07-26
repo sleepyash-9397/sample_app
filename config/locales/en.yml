@@ -113,7 +113,11 @@ en:
     delete: "Delete"
     delete_success: "Micropost deleted"
     warning_size_img: "should be less than 5MB"
-
   js:
     alert: "Maximum file size is ."
     alert_continue: "Please choose a smaller file."
+  follow:
+    following: "Following"
+    followers: "Followers"
+    submit_follow: "Follow"
+    submit_unfollow: "Unfollow"
