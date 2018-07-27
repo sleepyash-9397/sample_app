@@ -59,6 +59,9 @@ en:
     del: "Delete"
     forget_pass: "Forgot password"
     submit: "Submit"
+    home_page: "This is the home page for the"
+    sample_application: "sample application."
+    rails_logo: "Rails logo"
   messages:
     success: "Sign up success!"
     failure: "Sign up fail!"
@@ -98,3 +101,19 @@ en:
     reset_success: "Password has been reset."
     password_empty: "can't be empty"
     email_expired: "Password reset has expired."
+  micropost:
+    micropost: "micropost"
+    microposts: "Microposts"
+    create_success: "Micropost created!"
+    feed: "Micropost Feed"
+    submit_post: "Post"
+    placeholer: "Compose new micropost..."
+    view_profile: "view my profile"
+    confirm_del: "Are you sure?"
+    delete: "Delete"
+    delete_success: "Micropost deleted"
+    warning_size_img: "should be less than 5MB"
+
+  js:
+    alert: "Maximum file size is ."
+    alert_continue: "Please choose a smaller file."

@@ -16,6 +16,8 @@ class UsersController < ApplicationController
 
   def show
     return unless @user
+    @microposts = @user.microposts.sort_post
+                       .page(params[:page]).per Settings.per_page
   end
 
   def create

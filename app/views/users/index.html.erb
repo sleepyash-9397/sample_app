@@ -1,9 +1,9 @@
 <% provide :title, t("static_pages.all_users") %>
 <h1><%= t "static_pages.all_users" %></h1>
 
-<%= paginate @users, theme: 'twitter-bootstrap-3' %>
+<%= paginate @users, theme: "twitter-bootstrap-3" %>
 <ul class="users">
   <%= render @users %>
 </ul>
 
-<%= paginate @users, theme: 'twitter-bootstrap-3' %>
+<%= paginate @users, theme: "twitter-bootstrap-3" %>
