@@ -9,6 +9,7 @@ size:
   min_size: 50
   hight: 400
   width: 400
+  gravatar_follow: 30
 session:
   remember_me: 1
 per_page: 15
